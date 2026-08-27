@@ -1,0 +1,71 @@
+{
+  "rows_original": 101766,
+  "rows_after_cleaning": 99343,
+  "features_used": [
+    "race",
+    "gender",
+    "age",
+    "admission_type",
+    "admission_source_grp",
+    "discharge_disposition_grp",
+    "medical_specialty_grp",
+    "A1Cresult",
+    "diag_1_group",
+    "insulin",
+    "change",
+    "diabetesMed",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses",
+    "num_med_changes",
+    "num_meds_active",
+    "total_prior_visits"
+  ],
+  "model_comparison": [
+    {
+      "Model": "Baseline (majority class)",
+      "Accuracy": 0.8881,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "ROC_AUC": 0.5,
+      "PR_AUC": 0.1119
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.6725,
+      "Precision": 0.1778,
+      "Recall": 0.5316,
+      "F1": 0.2665,
+      "ROC_AUC": 0.6606,
+      "PR_AUC": 0.2122
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.6888,
+      "Precision": 0.1858,
+      "Recall": 0.5266,
+      "F1": 0.2747,
+      "ROC_AUC": 0.6654,
+      "PR_AUC": 0.2192
+    },
+    {
+      "Model": "CatBoost",
+      "Accuracy": 0.6556,
+      "Precision": 0.1782,
+      "Recall": 0.5754,
+      "F1": 0.2721,
+      "ROC_AUC": 0.6681,
+      "PR_AUC": 0.2291
+    }
+  ],
+  "risk_thresholds": {
+    "low_max": 0.4439792548841892,
+    "medium_max": 0.6132870701075233
+  }
+}

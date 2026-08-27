@@ -1,0 +1,35 @@
+{
+  "best_params": {
+    "depth": 8,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5,
+    "iterations": 200
+  },
+  "chosen_threshold": 0.54,
+  "final_features": [
+    "race",
+    "gender",
+    "age",
+    "admission_type",
+    "admission_source_grp",
+    "discharge_disposition_grp",
+    "medical_specialty_grp",
+    "A1Cresult",
+    "diag_1_group",
+    "insulin",
+    "diabetesMed",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_medications",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses",
+    "num_meds_active",
+    "total_prior_visits"
+  ],
+  "test_roc_auc": 0.6699138088182222,
+  "test_pr_auc": 0.2284724187824468,
+  "test_precision": 0.19586284010436078,
+  "test_recall": 0.4742779783393502,
+  "test_f1": 0.27723555790029014
+}
